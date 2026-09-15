@@ -1,0 +1,166 @@
+{
+  "warnings": [],
+  "busts": {
+    "lute": 8,
+    "tess": 8,
+    "heroine": 8
+  },
+  "fx": {
+    "snow": {
+      "frameWidth": 120,
+      "frameHeight": 132,
+      "frameCount": 8,
+      "source": "exec-12e84d99-cacc-40e0-9d15-0011694a6bc9.png",
+      "row": 0
+    },
+    "wind": {
+      "frameWidth": 156,
+      "frameHeight": 71,
+      "frameCount": 8,
+      "source": "exec-12e84d99-cacc-40e0-9d15-0011694a6bc9.png",
+      "row": 1
+    },
+    "footprint": {
+      "frameWidth": 89,
+      "frameHeight": 139,
+      "frameCount": 8,
+      "source": "exec-12e84d99-cacc-40e0-9d15-0011694a6bc9.png",
+      "row": 2
+    },
+    "cross-glow": {
+      "frameWidth": 131,
+      "frameHeight": 130,
+      "frameCount": 8,
+      "source": "exec-12e84d99-cacc-40e0-9d15-0011694a6bc9.png",
+      "row": 3
+    },
+    "ring": {
+      "frameWidth": 158,
+      "frameHeight": 173,
+      "frameCount": 8,
+      "source": "exec-51d9a39b-2656-4648-967d-69fab9bb90d9.png",
+      "row": 0
+    },
+    "wave": {
+      "frameWidth": 304,
+      "frameHeight": 115,
+      "frameCount": 8,
+      "source": "exec-51d9a39b-2656-4648-967d-69fab9bb90d9.png",
+      "row": 1
+    },
+    "glow": {
+      "frameWidth": 174,
+      "frameHeight": 172,
+      "frameCount": 7,
+      "source": "exec-51d9a39b-2656-4648-967d-69fab9bb90d9.png",
+      "row": 2
+    },
+    "ink": {
+      "frameWidth": 205,
+      "frameHeight": 206,
+      "frameCount": 7,
+      "source": "exec-51d9a39b-2656-4648-967d-69fab9bb90d9.png",
+      "row": 3
+    },
+    "ripple": {
+      "frameWidth": 183,
+      "frameHeight": 61,
+      "frameCount": 8,
+      "source": "exec-8123af78-b333-477d-8d5b-7ddafc8774cf.png",
+      "row": 0
+    },
+    "splash": {
+      "frameWidth": 151,
+      "frameHeight": 94,
+      "frameCount": 8,
+      "source": "exec-8123af78-b333-477d-8d5b-7ddafc8774cf.png",
+      "row": 1
+    },
+    "sprout": {
+      "frameWidth": 119,
+      "frameHeight": 108,
+      "frameCount": 8,
+      "source": "exec-8123af78-b333-477d-8d5b-7ddafc8774cf.png",
+      "row": 2
+    }
+  },
+  "props": {
+    "library": 30,
+    "study": 64,
+    "dorm": 35,
+    "desk": 16,
+    "campus": 70,
+    "school": 36
+  },
+  "ui": {
+    "ui1": 15,
+    "ui2": 27
+  },
+  "backgrounds": 32,
+  "walk_layouts": {
+    "walk-lute": {
+      "rows": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "columns": 4,
+      "frameWidth": 119,
+      "frameHeight": 248,
+      "frameCount": 16,
+      "mirror": {}
+    },
+    "walk-tess": {
+      "rows": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "columns": 4,
+      "frameWidth": 130,
+      "frameHeight": 293,
+      "frameCount": 16,
+      "mirror": {}
+    },
+    "walk-heroine": {
+      "rows": [
+        "down",
+        "left",
+        "right",
+        "up"
+      ],
+      "columns": 4,
+      "frameWidth": 108,
+      "frameHeight": 294,
+      "frameCount": 16,
+      "mirror": {}
+    }
+  },
+  "npcs": 16,
+  "items": 16,
+  "props_total": 251,
+  "refs": 18,
+  "manifest_keys": 395,
+  "decisions": {
+    "interpreter": "WorkBuddy python 3.13 env 'default' (vibegame.exe python sandbox blocks filesystem writes; documented fallback used)",
+    "chroma_key": "saturation rule per spec; extra guard g<100 on magenta sheets to protect legit pink sprite pixels; extra high-threshold 'contaminated' kill (chroma dominance > 100) for opaque anti-aliased rim pixels; feather done in premultiplied space + un-premultiply to kill bg halos; residual despill clamp only on still chroma-dominant pixels",
+    "walk_rows": "determined empirically from debug contact sheets: row order is down/left/right/up for all three characters; no mirrored duplicates (left and right are distinct drawings)",
+    "fx_frames": "rows detected by occupancy bands, merged to expected row count; columns merged to 8 when over-split by sparse particles; glow and ink sheets genuinely have 7 frames",
+    "extra_sheets": "6 chroma prop/tileset sheets present in photos/ but absent from the mapping table (library/study/dorm/desk/campus/school) -> sliced into individual props in assets/items/ as prop-<sheet>-<nn>",
+    "ui_extras": "beyond the requested 22 UI elements, also extracted: bar-diamonds, note-clip, panel-tall-tabs, btn-sm-0..3, panel-wide, card-v0..3, dropdown, dropdown-2, checkbox-2, checkbox-on-green, panel-xl",
+    "items_naming": "item icon names follow the mapping table order (row-major)",
+    "props_naming": "prop-<sheet>-<nn> in reading order (top-to-bottom, left-to-right)"
+  },
+  "counts": {
+    "bg": 32,
+    "char_busts": 24,
+    "char_walks": 3,
+    "char_npcs": 16,
+    "fx": 11,
+    "items": 16,
+    "props": 251,
+    "ui": 42
+  }
+}

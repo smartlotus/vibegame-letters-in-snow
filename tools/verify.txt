@@ -1,0 +1,7 @@
+verify report — 363 RGBA outputs of 395 manifest keys
+[PASS] 1. all manifest paths exist — 395 entries
+[PASS] 2. spritesheet dims are multiples of frame size — 14 spritesheets; all ok
+[PASS] 3. manifest keys unique — 395 keys
+[PASS] 4. transparent outputs have alpha<255 and transparent corners — checked 6: ui-bar-diamonds, item-boots, bust-tess-earnest, prop-study-40, prop-study-25, prop-study-14
+
+RESULT: ALL PASS

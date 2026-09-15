@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vibegame</title>
+  <title>流年 · 雪中信</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    html, body {
+      background: #03050a;
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh; overflow: hidden;
+      font-family: "Source Han Serif CN", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+    }
     #game-container { position: relative; }
     #game-container canvas { display: block; }
   </style>
   <!-- crossorigin="anonymous" lets the browser surface full stack traces from
-       Phaser instead of collapsing them into "Script error." (CORS rule for
-       cross-origin scripts). Without it, runtime errors thrown inside Phaser
-       are unobservable, which has caused multi-agent misdiagnosis. -->
+       Phaser instead of collapsing them into "Script error." -->
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js" crossorigin="anonymous"></script>
   <script>window.__APP_CONFIG__ = window.__APP_CONFIG__ || { appBasePath: '', apiBaseUrl: '' }</script>
 </head>

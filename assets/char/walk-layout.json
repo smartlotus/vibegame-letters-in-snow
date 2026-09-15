@@ -1,0 +1,41 @@
+{
+  "walk-lute": {
+    "rows": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "columns": 4,
+    "frameWidth": 119,
+    "frameHeight": 248,
+    "frameCount": 16,
+    "mirror": {}
+  },
+  "walk-tess": {
+    "rows": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "columns": 4,
+    "frameWidth": 130,
+    "frameHeight": 293,
+    "frameCount": 16,
+    "mirror": {}
+  },
+  "walk-heroine": {
+    "rows": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "columns": 4,
+    "frameWidth": 108,
+    "frameHeight": 294,
+    "frameCount": 16,
+    "mirror": {}
+  }
+}

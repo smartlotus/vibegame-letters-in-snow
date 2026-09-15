@@ -1,18 +1,19 @@
-# Game Design Document
+# Game Design Document — 流年 · 雪中信 (letters-in-snow)
 
-> **Version** v0.1 | **Type** <!-- TODO --> | **Platform** Browser (PC/Mobile) | **Session** <!-- TODO: e.g., 5-15 min per run -->
-> **One-liner**: <!-- TODO: one sentence that captures the game's unique appeal -->
+> **Version** v1.0 | **Type** 叙事视觉小说 + 轻探索 | **Platform** Browser (PC) | **Session** 30–50 分钟通关
+> **One-liner**: 你轮流扮演他，和她，亲手把同一根弦拉紧——然后看着它断掉。
 
 ---
 
 ## Core Fantasy
 
-> The moment the player wins / succeeds — what does it *feel* like?
+> 玩家不是在做"正确"的选择，而是在**同时理解两个人都没有错**。
 
-<!-- Write 2-4 sentences describing the exact emotional payoff. This is the north star for all other design decisions.
-Example (Sekiro): "You've died to this boss forty times. You finally read every attack. The parry clicks — sparks fly, posture breaks, deathblow lands. Pure mastery earned through suffering." -->
+你替忒斯伸出手，又替她把手抽回来。每一次点击都在说"我懂你"，而每一次都在让另一个人更疼。当那根弦最终绷断时，玩家必须承认：这不是他做的，也不是她做的，是我做的。而它本来也不会有别的结局。
 
-<!-- TODO: Define the core fantasy -->
+小说给的是这一段：
+
+> 他需要靠近，她需要远离。这没有谁对谁错，只不过结果是他们都会痛。
 
 ---
 
@@ -20,188 +21,226 @@ Example (Sekiro): "You've died to this boss forty times. You finally read every 
 
 ### Design Pillars
 
-<!-- 3-5 short, punchy statements that define the experience. Every feature should support at least one pillar.
-Example (Animal Crossing):
-- [x] Craft and customize your world
-- [x] Celebrate the seasons
-- [x] Gather friends for island adventures -->
-
-<!-- TODO: Define 3-5 design pillars -->
+- [x] **双身同弦** — 玩家交替扮演忒斯与她，两边的选择推动同一个数值
+- [x] **字留印** — 说出的话、划掉的字、寄出的信，都会留下可回看的痕迹
+- [x] **雪是旁观者** — 框架层的路特在雪里走，用不懂事的距离感替玩家想心事
+- [x] **不惩罚，只承重** — 没有"错误结局"。所有分支都通向同一个冬天
 
 ### Design Philosophy
 
-<!-- 2-4 principles that guide every design decision. When there's a conflict between features, these resolve it.
-Example: "Information first — the player always knows why they died." -->
-
-1. <!-- TODO -->
-2. <!-- TODO -->
+1. **文本即机制** —— 选项的措辞本身就是压力。不写"靠近/远离"，写"你不用有压力，我们不用在一起"。
+2. **可见的沉默** —— 她沉默的那两个月，玩家要真的等（画面留白、只有雪声、可以点但点不动）。
+3. **不解释** —— 不加旁白点题。让玩家自己在路特的注脚里拼出因果。
 
 ### Core Settings
 
-**Art Style**: <!-- Cartoon / Pixel Art / Anime / Realistic / Stylized / Hand-drawn / Other -->
+**Art Style**: 手绘日式动画风格 + 哥特学院夜景，AI 生成资产表加工
 
-**Game Type**: <!-- Action / RPG / Platformer / Puzzle / Strategy / Simulation / Narrative / Other -->
+**Game Type**: 叙事 / 视觉小说 / 分支对话
 
-**Atmosphere**: <!-- Epic / Mysterious / Peaceful / Tense / Humorous / Dark / Whimsical / Scary -->
+**Atmosphere**: 冷、静、克制、隐痛。北境冬夜，雪一直在下
 
-**Background Vibe**: <!-- e.g., "Post-apocalyptic city where music is banned" -->
+**Background Vibe**: 阿尔镇——一个建在山脚下的宗教小镇。公学在山腰，宿舍在山下，墓园在教堂背后。冬天占了一年的三分之二
 
-**Player Character**: <!-- Who the player is: appearance, personality, motivation -->
+**Player Character**:
+- **路特**（框架层）：19 岁，戴圆框眼镜，圆框眼镜下的眼睛；他几乎只是个读者，唯一一次"出场"是捡起一枚金十字架
+- **忒斯**（往事层）：公学学生，书包、制服背心。他信理性，讨厌人际消耗，却在十六岁那天毫无预告地爱上了一个人
+- **她**（往事层）：同校，黑短发，永远抱着一本书。她要的是"不被定义、绝对自由"
 
-**Game Objective**: <!-- What the player is trying to achieve -->
+**Game Objective**: 把这两层故事读完，并且在结尾决定——那枚十字架，还不还。
 
 ### Target Audience
 
 | Attribute | Description |
 |-----------|-------------|
-| Age range | <!-- TODO --> |
-| Play context | <!-- e.g., commute, desktop, couch session --> |
-| Motivation | <!-- e.g., mastery challenge, story, social, relaxation --> |
-| Session length | <!-- TODO --> |
+| Age range | 16+ |
+| Play context | 安静的桌面单人时段 |
+| Motivation | 叙事体验 / 情感共鸣 / 文学改编 |
+| Session length | 30–50 分钟，可分章续玩 |
 
 ### Comparable Games
 
 | Game | Borrow what |
 |------|-------------|
-| <!-- TODO --> | <!-- visual style / core mechanic / pacing / etc. --> |
+| 《To the Moon》 | 以叙事为唯一核心，机制服务于情绪节奏 |
+| 《Florence》 | 用交互方式本身表达关系的远近与消磨 |
+| 《Emily is Away》 | 打字机文本节奏与"等待"的压迫感 |
+| 《去月球》/《白色相簿》 | 章节卡 + 回忆录式的回看结构 |
 
 ### MDA Framework
-
-<!-- Fill top-down: Aesthetics (feelings) → Dynamics (behaviors) → Mechanics (rules). -->
 
 **Target Aesthetics (feelings)**:
 
 | Feeling | Weight | How to deliver |
 |---------|--------|----------------|
-| <!-- e.g., Mastery / Discovery / Narrative / Challenge --> | ★★★★★ | <!-- TODO --> |
+| Narrative（叙事） | ★★★★★ | 双层结构 + 原文关键段落原样呈现 |
+| Sensation（感受） | ★★★★☆ | 雪粒子、冷色调、打字机、弦的颤动 |
+| Challenge（心智压力） | ★★★☆☆ | 选项措辞的暧昧性，没有正确答案 |
+| Discovery（发现） | ★★★☆☆ | 「留印」收集：被划掉的句子其实能读出来 |
 
-**Derived Dynamics (player behaviors)**:
-- <!-- e.g., Player experiments → discovers synergies → feels clever -->
+**Derived Dynamics（player behaviors）**:
+
+- 玩家在两个视角间反复切换 → 逐渐意识到自己无法站在任一方 → 放弃"最优解"心态，转为"我在承受" → 情感投入
+- 玩家在雪地里慢走，为了听完路特的注脚 → 沉浸节奏
 
 **Supporting Mechanics**:
-- <!-- e.g., Combo system with visible feedback → skill expression -->
+
+- 单个共享张力值「弦」→ 让"两边都在一起"这件事变得可见，而不是只有台词说
+- 打字机速度 + 可跳过但需要长按 → 让"等待"成为可选择的体验
+- 「留印」收集与回顾 → 把文本变成可积攒的物件
 
 ### Signature Mechanics
 
-<!-- The 1-2 mechanics that define this game. Everything else supports them.
-Examples: Mario's jump / Sekiro's parry / Zelda's puzzle-combat -->
+**1. 「弦」(The Taut String)**
 
-<!-- TODO: Describe the 1-2 signature mechanics and why they produce the core fantasy -->
+全篇唯一的数值，屏幕顶端一条细线：左端「靠近」，右端「远离」，中间是一根会随张力变形、颤动、发出细响的弦。
+
+- 忒斯章节的**伸手**选择 → 张力 +
+- 她章节的**退开**选择 → 张力 +
+- 少数的**共鸣**选择（两人都跨出半步）→ 张力 −（但也只是暂时的）
+- 张力 ≥ 100 → 进入临界：系统根据**玩家最后一次选择的性质**决定演出——
+  - 靠"伸手"顶到 100 → **断裂**：弦绷断，画面锐利白闪，进入她彻底切断的章节
+  - 靠"退开"顶到 100 → **触底反弹**：弦回弹，画面泛暖，进入她写信和好的章节
+
+这就是小说那句直接变成的机制：
+
+> 当一根弦被绷到最紧的极致时，要么断裂，要么触底反弹。
+
+**2. 「留印」(Impressions)**
+
+在框架层与往事的沉默段落中可捡到的短句。全部来自小说中被划掉、说出口又反悔、或者只在心里说过的话。
+
+> 写出去的东西，泼出去的水，但墨水不像水，它会留印子。
+
+收集后在「回忆录」面板可以逐条翻阅。
 
 ### Core Game Loop
 
-<!-- The repeating cycle the player lives in. ASCII diagram recommended. -->
-
 ```
-<!-- TODO:
-  Explore map
+读一段故事（打字机 + 立绘 + 场景）
       │
       ▼
-  Find challenge
+遇到一个当下没有正确答案的岔口
       │
-      ├── succeed → reward → upgrade
-      └── fail → retry with knowledge
--->
+      ├── 伸手 → 弦 +n ──┐
+      └── 退开 → 弦 +n ──┤
+                          ▼
+                    弦到达临界
+                          │
+        ┌─────────────────┴─────────────────┐
+        ▼                                   ▼
+   断裂（锐）                           触底反弹（暖）
+        └─────────────────┬─────────────────┘
+                          ▼
+              进入下一章 · 世界更冷一档
 ```
 
-**Loop duration**: <!-- e.g., "30s–2min per encounter" -->
+**Loop duration**: 单章 3–6 分钟；框架层探索段 1–2 分钟
 
 ---
 
 ## Detailed Design
 
-<!-- Fill this section AFTER confirming Design Pillars with the user. -->
-
 ### System Mechanics
 
-**Core Gameplay**: <!-- Combat / Exploration / Puzzle / Resource Management / Building / Stealth / Crafting -->
+**Core Gameplay**: 分支对话 + 张力管理 + 轻点击探索
 
-**Player Perspective**: <!-- Top Down / Side View / Isometric / First Person / Third Person / Combined -->
+**Player Perspective**: 往事层为**鸟瞰式场景 + 胸像对话框**；框架层为**俯视四向行走**
 
-**Multiplayer**: <!-- Single Player / Local Co-op / Online / N/A -->
+**Multiplayer**: 无
+
+### 章节结构
+
+| # | 章节 | 视角 | 场景 | 关键交互 |
+|---|------|------|------|----------|
+| 0 | 序章 · 雪中的台阶 | 路特 | 教堂正门 / 台阶 / 墓园 | 探索段：走下台阶，滑一跤，捡起金十字架；触发妇人讲述 |
+| 1 | 一 · 你也看过《百年孤独》吗 | 忒斯 | 图书馆 → 雪夜归途 | 图书馆里的接近方式（3 选 1）；归途对话 |
+| 2 | 二 · 肤浅而又深入 | 两人交替 | 教室 / 走廊 / 集体活动 | 无声交流的默契；忒斯选择把秘密守到什么程度 |
+| 3 | 三 · 你不用有压力 | 忒斯 | 教室 / 走廊 | 表白措辞（3 选 1）；被拒；"只是好朋友" |
+| 4 | 四 · 风言风语 | 她 → 忒斯 | 教室 / 走廊 / 雪夜林荫道（弦临界） | 她听到流言；她的切断；两个月戒断（沉默段） |
+| 5 | 五 · 五行字 | 她 | 她的书房（等距） | **小游戏：写五行信**——从 11 个句子中恰好选 5 句寄出 |
+| 6 | 六 · 当然可以和好 | 她 | 邮筒 / 她的书房 | 读他的三页回信；她发现自己那点隐秘的满足 |
+| 7 | 七 · 隔着一条马路 | 两人 | 大街 / 三角形公园 / 路灯下 | 喊名字；"我喜欢你"的代价；**七日独处**（七日序列） |
+| 8 | 八 · 不知道 | 她 → 路特 | 她的房间 / 雪夜归途 / 家门口 | 长信与"边走边看吧"；**终局选择：十字架归还与否** |
+
+### 关键意象清单（必须落地）
+
+| 意象 | 出处 | 游戏呈现 |
+|------|------|----------|
+| 127 / 110 / 71 | 路特统计阿尔镇的 127 个爱情故事，110 悲情结局，71 对男主是纯粹悲剧 | 序章注脚文本；结尾统计面板 |
+| 金十字架 | 妇人掉的祷告十字 | 收集道具；终局选择物 |
+| 五行信 | 你还好吗 / 假期过得怎么样 / 我想了很久 / 如果可以的话 / 我们能不能和好 | 第五章小游戏 |
+| 63 天 | 绝交后第六十三天写的信 | 第五章标题卡 |
+| 七日 | 分开后的七天，她在独处里找回完整感 | 第七章七日序列 |
+| 「我不知道」 | 她最后的回答 | 第八章；游戏副标题 |
+| 十字架尖端抵掌心 | 微弱却无法忽视的刺痛 | 张力临界时的屏幕表现 |
 
 ### Characters
 
-#### Player Character
+#### 路特（框架层主角）
 
-- Initial position: <!-- where the player spawns, e.g., left side of screen -->
-- Visual scale: <!-- relative to screen size, e.g., "about 1/8 of screen height" -->
-- States: `IDLE`, `MOVE`, `JUMP`, `FALL`, `ATTACK`, `HURT`, `DIE`
-- Stats (in `config/player.json`):
-  - HP: 100 (baseline — all values calibrated against this)
-  - Move speed: <!-- TODO -->
-  - Jump height: <!-- TODO -->
-  - Attack damage: <!-- TODO: 10–50% of normal enemy HP -->
+- 视觉：戴圆框眼镜、深蓝围巾、黑色长外套、雪地靴；手持金十字架
+- 行走：四向精灵表，32×48 显示尺寸的约 3 倍（约 96×144 世界像素）
+- 状态：`IDLE`、`WALK_*`（四向）
 
-#### Enemies
+#### 忒斯
 
-| Enemy | HP | Damage | Behavior |
-|-------|-----|--------|----------|
-| <!-- TODO --> | ×<!-- --> player HP | <!-- --> | <!-- patrol / chase / ranged --> |
+- 视觉：褐色短发、白衬衫 + 深灰背心、书包；公学制服
+- 表情：8 种胸像（平静 / 微笑 / 低头 / 惊讶 / 认真 / 不耐 / 疲惫 / 闭眼笑）
+
+#### 她
+
+- 视觉：黑色短发、深绿毛衣 + 衬衫领带 + 短裤；常抱一本书
+- 表情：8 种胸像（平静 / 微笑 / 生气 / 落泪惊讶 / 疲惫 / 严肃皱眉 / 难过 / 失落）
+
+#### NPC
+
+- 12+ 种同校学生与镇民，用于教室 / 图书馆 / 街道的填充
 
 ### Game Flow
 
-- **Start state**: <!-- what the player sees at launch -->
-- **Win condition**: <!-- TODO -->
-- **Lose condition**: <!-- TODO -->
-- **After win/lose**: <!-- restart / keep progress / outro screen -->
+- **Start state**: 标题界面（雪落下，一根弦横贯画面），按钮：开始 / 回忆录 / 继续 / 设置
+- **Win condition**: 走完全部 9 章并做出终局选择
+- **Lose condition**: 无（设计上不存在失败）
+- **After**: 结局 → 统计面板（收集到的留印数、弦的峰值、你伸手/退开的次数）→ 回标题
 
 ### Map / Level Design
 
-- **Map type**: <!-- Random / Level-based / Open World -->
-- **Map design rules**: <!-- TODO -->
+- **Map type**: 章节线性推进；框架层是 3 段固定的雪地小地图
+- **Map design rules**:
+  - 框架层地图用场景 CG 作静态背景 + 精灵行走，不用 tilemap（省工且视觉更统一）
+  - 热点用发光的「留印」图标标记，走近即触发
 
 ---
 
 ## Art Requirements
 
-<!-- Simple asset list for the Artist agent. Describe what is needed and what it should look like.
-Do NOT specify frame counts or animation details — that is Artist's responsibility. -->
+### 素材来源
 
-### Characters
+**首选**：`流年/photos/` 的 69 张 AI 生成资产表，经抠底 / 切帧 / 命名后进入 `assets/`。
 
-| Character | Actions needed | Visual description |
-|-----------|---------------|-------------------|
-| Player | Idle, walk, jump, attack, hurt, die | <!-- TODO --> |
-| <!-- Enemy --> | <!-- actions --> | <!-- TODO --> |
+**补充**：若出现缺口，用 WorkBuddy 生图补（保持与现有一致的"冷调哥特学院夜"风格）。
 
-### Map Assets
+### 需要的资产清单
 
-<!-- 2D map has three layers:
-- Background: behind everything, no collision
-- Obstacle Props: platforms, walls, ground — player collides with these
-- Decorative Props: clouds, grass, trees — visual only, no collision -->
-
-**Background**: <!-- TODO: what it looks like per scene -->
-
-**Obstacle Props** (with collision):
-- <!-- TODO -->
-
-**Decorative Props** (no collision):
-- <!-- TODO -->
-
-### UI & Effects
-
-- Font style: <!-- TODO -->
-- Visual effects: <!-- e.g., screen shake on hit, particles on death, damage numbers -->
+| 类别 | 用途 | 来源 |
+|------|------|------|
+| 背景 CG | 教堂正门 / 教堂内部 / 图书馆 / 教室 / 走廊 / 宿舍 / 门厅 / 雪夜林荫道 / 十字路口 / 三角形公园 / 雪中小溪 / 雪夜路灯 / 女主书房 / 家门口 / 雪村山坡 | 现有场景图直接复用 |
+| 立绘胸像 | 路特 ×8 / 忒斯 ×8 / 她 ×8 | 从角色表情图切帧抠底 |
+| 行走精灵表 | 路特 / 忒斯 / 她 / NPC | 从精灵表切帧抠底 |
+| UI 套件 | 对话框、选项按钮、面板、章节卡、图标 | 从 UI 套件图切九宫格 |
+| 特效 | 雪花、脚印、涟漪、光环、金十字闪光 | 从特效图切帧 |
+| 道具图标 | 金十字架、眼镜、信封、书、镜子、路灯、木桥 | 从道具图切帧 |
 
 ---
 
 ## Design Decisions Log
 
-<!-- Record key design choices: options considered, what was chosen, and why.
-Not a version history — a decision record so future agents understand intent.
-
-Example:
-| Decision | Options | Chosen | Reason |
-|----------|---------|--------|--------|
-| Evidence collection | Random card vs active search | Active search | Random has no learning (Koster); active creates exploration feeling |
--->
-
 | Decision | Options Considered | Chosen | Reason |
 |----------|--------------------|--------|--------|
-| <!-- TODO --> | <!-- A vs B --> | <!-- chosen --> | <!-- diagnosis + reasoning --> |
-
----
-
-> Use the `language` value defined in `.vibegame/global.json` to write this file. Keep code identifiers, file paths, asset keys, and engine vocabulary in English.
+| 核心机制 | 好感度双数值 vs 单一弦张力 | 单一弦张力 | 小说写的是"两人共享同一种痛"。双数值会让玩家做最优解，而最优解恰恰是这个故事在否认的东西 |
+| 玩家视角 | 只扮演忒斯 vs 只扮演她 vs 交替 | 交替扮演双方 | 若只选一方，玩家会站队。交替才能逼出"两个人都没有错" |
+| 张力临界判定 | 统一断裂 vs 按最后选择分流 | 按最后选择分流（伸手→断裂 / 退开→反弹） | 直接对应原文"要么断裂，要么触底反弹"，并让玩家的手感决定叙事走向 |
+| 框架层 | 纯文本旁白 vs 可行走的探索段 | 可行走探索段 | 需要一个"呼吸"节奏层；也让"路特只是个读者"这件事有身体感 |
+| 背景呈现 | 用 tilemap 拼场景 vs 用场景 CG | 场景 CG | 现有素材里场景 CG 质量最高、数量最足，且省去拼图工作量 |
+| 结局 | 明确悲剧结局 vs 开放选择 | 十字架归还与否的开放选择 | 原文结尾就是"也许明天去教堂的时候，他会把它还回去。也许不会。"——不该替玩家收束 |

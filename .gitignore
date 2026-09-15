@@ -4,9 +4,19 @@
 /.vibegame/tasks/
 /.vibegame/dashboard/
 /.vibegame/team/pids/
-/assets/
 /skeletons/
 tests/**/evidence/
 **/node_modules/
 **/__pycache__/
+
+# 运行时与本地产物（可再生）
+.vibegame/logs/
+.vibegame/traces/
+.vibegame/runtime/
 logs/
+*.log
+
+# 素材原始参考表（35MB，可由 tools/build_assets.py 从源素材完全重建）
+assets/_ref/
+
+# 注意：assets/ 是交付物，必须入库（manifest.json + bg/char/fx/items/ui）

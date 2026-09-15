@@ -1,0 +1,1006 @@
+{
+  "prop-library-00": {
+    "type": "image",
+    "path": "items/prop-library-00.png"
+  },
+  "prop-library-01": {
+    "type": "image",
+    "path": "items/prop-library-01.png"
+  },
+  "prop-library-02": {
+    "type": "image",
+    "path": "items/prop-library-02.png"
+  },
+  "prop-library-03": {
+    "type": "image",
+    "path": "items/prop-library-03.png"
+  },
+  "prop-library-04": {
+    "type": "image",
+    "path": "items/prop-library-04.png"
+  },
+  "prop-library-05": {
+    "type": "image",
+    "path": "items/prop-library-05.png"
+  },
+  "prop-library-06": {
+    "type": "image",
+    "path": "items/prop-library-06.png"
+  },
+  "prop-library-07": {
+    "type": "image",
+    "path": "items/prop-library-07.png"
+  },
+  "prop-library-08": {
+    "type": "image",
+    "path": "items/prop-library-08.png"
+  },
+  "prop-library-09": {
+    "type": "image",
+    "path": "items/prop-library-09.png"
+  },
+  "prop-library-10": {
+    "type": "image",
+    "path": "items/prop-library-10.png"
+  },
+  "prop-library-11": {
+    "type": "image",
+    "path": "items/prop-library-11.png"
+  },
+  "prop-library-12": {
+    "type": "image",
+    "path": "items/prop-library-12.png"
+  },
+  "prop-library-13": {
+    "type": "image",
+    "path": "items/prop-library-13.png"
+  },
+  "prop-library-14": {
+    "type": "image",
+    "path": "items/prop-library-14.png"
+  },
+  "prop-library-15": {
+    "type": "image",
+    "path": "items/prop-library-15.png"
+  },
+  "prop-library-16": {
+    "type": "image",
+    "path": "items/prop-library-16.png"
+  },
+  "prop-library-17": {
+    "type": "image",
+    "path": "items/prop-library-17.png"
+  },
+  "prop-library-18": {
+    "type": "image",
+    "path": "items/prop-library-18.png"
+  },
+  "prop-library-19": {
+    "type": "image",
+    "path": "items/prop-library-19.png"
+  },
+  "prop-library-20": {
+    "type": "image",
+    "path": "items/prop-library-20.png"
+  },
+  "prop-library-21": {
+    "type": "image",
+    "path": "items/prop-library-21.png"
+  },
+  "prop-library-22": {
+    "type": "image",
+    "path": "items/prop-library-22.png"
+  },
+  "prop-library-23": {
+    "type": "image",
+    "path": "items/prop-library-23.png"
+  },
+  "prop-library-24": {
+    "type": "image",
+    "path": "items/prop-library-24.png"
+  },
+  "prop-library-25": {
+    "type": "image",
+    "path": "items/prop-library-25.png"
+  },
+  "prop-library-26": {
+    "type": "image",
+    "path": "items/prop-library-26.png"
+  },
+  "prop-library-27": {
+    "type": "image",
+    "path": "items/prop-library-27.png"
+  },
+  "prop-library-28": {
+    "type": "image",
+    "path": "items/prop-library-28.png"
+  },
+  "prop-library-29": {
+    "type": "image",
+    "path": "items/prop-library-29.png"
+  },
+  "prop-study-00": {
+    "type": "image",
+    "path": "items/prop-study-00.png"
+  },
+  "prop-study-01": {
+    "type": "image",
+    "path": "items/prop-study-01.png"
+  },
+  "prop-study-02": {
+    "type": "image",
+    "path": "items/prop-study-02.png"
+  },
+  "prop-study-03": {
+    "type": "image",
+    "path": "items/prop-study-03.png"
+  },
+  "prop-study-04": {
+    "type": "image",
+    "path": "items/prop-study-04.png"
+  },
+  "prop-study-05": {
+    "type": "image",
+    "path": "items/prop-study-05.png"
+  },
+  "prop-study-06": {
+    "type": "image",
+    "path": "items/prop-study-06.png"
+  },
+  "prop-study-07": {
+    "type": "image",
+    "path": "items/prop-study-07.png"
+  },
+  "prop-study-08": {
+    "type": "image",
+    "path": "items/prop-study-08.png"
+  },
+  "prop-study-09": {
+    "type": "image",
+    "path": "items/prop-study-09.png"
+  },
+  "prop-study-10": {
+    "type": "image",
+    "path": "items/prop-study-10.png"
+  },
+  "prop-study-11": {
+    "type": "image",
+    "path": "items/prop-study-11.png"
+  },
+  "prop-study-12": {
+    "type": "image",
+    "path": "items/prop-study-12.png"
+  },
+  "prop-study-13": {
+    "type": "image",
+    "path": "items/prop-study-13.png"
+  },
+  "prop-study-14": {
+    "type": "image",
+    "path": "items/prop-study-14.png"
+  },
+  "prop-study-15": {
+    "type": "image",
+    "path": "items/prop-study-15.png"
+  },
+  "prop-study-16": {
+    "type": "image",
+    "path": "items/prop-study-16.png"
+  },
+  "prop-study-17": {
+    "type": "image",
+    "path": "items/prop-study-17.png"
+  },
+  "prop-study-18": {
+    "type": "image",
+    "path": "items/prop-study-18.png"
+  },
+  "prop-study-19": {
+    "type": "image",
+    "path": "items/prop-study-19.png"
+  },
+  "prop-study-20": {
+    "type": "image",
+    "path": "items/prop-study-20.png"
+  },
+  "prop-study-21": {
+    "type": "image",
+    "path": "items/prop-study-21.png"
+  },
+  "prop-study-22": {
+    "type": "image",
+    "path": "items/prop-study-22.png"
+  },
+  "prop-study-23": {
+    "type": "image",
+    "path": "items/prop-study-23.png"
+  },
+  "prop-study-24": {
+    "type": "image",
+    "path": "items/prop-study-24.png"
+  },
+  "prop-study-25": {
+    "type": "image",
+    "path": "items/prop-study-25.png"
+  },
+  "prop-study-26": {
+    "type": "image",
+    "path": "items/prop-study-26.png"
+  },
+  "prop-study-27": {
+    "type": "image",
+    "path": "items/prop-study-27.png"
+  },
+  "prop-study-28": {
+    "type": "image",
+    "path": "items/prop-study-28.png"
+  },
+  "prop-study-29": {
+    "type": "image",
+    "path": "items/prop-study-29.png"
+  },
+  "prop-study-30": {
+    "type": "image",
+    "path": "items/prop-study-30.png"
+  },
+  "prop-study-31": {
+    "type": "image",
+    "path": "items/prop-study-31.png"
+  },
+  "prop-study-32": {
+    "type": "image",
+    "path": "items/prop-study-32.png"
+  },
+  "prop-study-33": {
+    "type": "image",
+    "path": "items/prop-study-33.png"
+  },
+  "prop-study-34": {
+    "type": "image",
+    "path": "items/prop-study-34.png"
+  },
+  "prop-study-35": {
+    "type": "image",
+    "path": "items/prop-study-35.png"
+  },
+  "prop-study-36": {
+    "type": "image",
+    "path": "items/prop-study-36.png"
+  },
+  "prop-study-37": {
+    "type": "image",
+    "path": "items/prop-study-37.png"
+  },
+  "prop-study-38": {
+    "type": "image",
+    "path": "items/prop-study-38.png"
+  },
+  "prop-study-39": {
+    "type": "image",
+    "path": "items/prop-study-39.png"
+  },
+  "prop-study-40": {
+    "type": "image",
+    "path": "items/prop-study-40.png"
+  },
+  "prop-study-41": {
+    "type": "image",
+    "path": "items/prop-study-41.png"
+  },
+  "prop-study-42": {
+    "type": "image",
+    "path": "items/prop-study-42.png"
+  },
+  "prop-study-43": {
+    "type": "image",
+    "path": "items/prop-study-43.png"
+  },
+  "prop-study-44": {
+    "type": "image",
+    "path": "items/prop-study-44.png"
+  },
+  "prop-study-45": {
+    "type": "image",
+    "path": "items/prop-study-45.png"
+  },
+  "prop-study-46": {
+    "type": "image",
+    "path": "items/prop-study-46.png"
+  },
+  "prop-study-47": {
+    "type": "image",
+    "path": "items/prop-study-47.png"
+  },
+  "prop-study-48": {
+    "type": "image",
+    "path": "items/prop-study-48.png"
+  },
+  "prop-study-49": {
+    "type": "image",
+    "path": "items/prop-study-49.png"
+  },
+  "prop-study-50": {
+    "type": "image",
+    "path": "items/prop-study-50.png"
+  },
+  "prop-study-51": {
+    "type": "image",
+    "path": "items/prop-study-51.png"
+  },
+  "prop-study-52": {
+    "type": "image",
+    "path": "items/prop-study-52.png"
+  },
+  "prop-study-53": {
+    "type": "image",
+    "path": "items/prop-study-53.png"
+  },
+  "prop-study-54": {
+    "type": "image",
+    "path": "items/prop-study-54.png"
+  },
+  "prop-study-55": {
+    "type": "image",
+    "path": "items/prop-study-55.png"
+  },
+  "prop-study-56": {
+    "type": "image",
+    "path": "items/prop-study-56.png"
+  },
+  "prop-study-57": {
+    "type": "image",
+    "path": "items/prop-study-57.png"
+  },
+  "prop-study-58": {
+    "type": "image",
+    "path": "items/prop-study-58.png"
+  },
+  "prop-study-59": {
+    "type": "image",
+    "path": "items/prop-study-59.png"
+  },
+  "prop-study-60": {
+    "type": "image",
+    "path": "items/prop-study-60.png"
+  },
+  "prop-study-61": {
+    "type": "image",
+    "path": "items/prop-study-61.png"
+  },
+  "prop-study-62": {
+    "type": "image",
+    "path": "items/prop-study-62.png"
+  },
+  "prop-study-63": {
+    "type": "image",
+    "path": "items/prop-study-63.png"
+  },
+  "prop-dorm-00": {
+    "type": "image",
+    "path": "items/prop-dorm-00.png"
+  },
+  "prop-dorm-01": {
+    "type": "image",
+    "path": "items/prop-dorm-01.png"
+  },
+  "prop-dorm-02": {
+    "type": "image",
+    "path": "items/prop-dorm-02.png"
+  },
+  "prop-dorm-03": {
+    "type": "image",
+    "path": "items/prop-dorm-03.png"
+  },
+  "prop-dorm-04": {
+    "type": "image",
+    "path": "items/prop-dorm-04.png"
+  },
+  "prop-dorm-05": {
+    "type": "image",
+    "path": "items/prop-dorm-05.png"
+  },
+  "prop-dorm-06": {
+    "type": "image",
+    "path": "items/prop-dorm-06.png"
+  },
+  "prop-dorm-07": {
+    "type": "image",
+    "path": "items/prop-dorm-07.png"
+  },
+  "prop-dorm-08": {
+    "type": "image",
+    "path": "items/prop-dorm-08.png"
+  },
+  "prop-dorm-09": {
+    "type": "image",
+    "path": "items/prop-dorm-09.png"
+  },
+  "prop-dorm-10": {
+    "type": "image",
+    "path": "items/prop-dorm-10.png"
+  },
+  "prop-dorm-11": {
+    "type": "image",
+    "path": "items/prop-dorm-11.png"
+  },
+  "prop-dorm-12": {
+    "type": "image",
+    "path": "items/prop-dorm-12.png"
+  },
+  "prop-dorm-13": {
+    "type": "image",
+    "path": "items/prop-dorm-13.png"
+  },
+  "prop-dorm-14": {
+    "type": "image",
+    "path": "items/prop-dorm-14.png"
+  },
+  "prop-dorm-15": {
+    "type": "image",
+    "path": "items/prop-dorm-15.png"
+  },
+  "prop-dorm-16": {
+    "type": "image",
+    "path": "items/prop-dorm-16.png"
+  },
+  "prop-dorm-17": {
+    "type": "image",
+    "path": "items/prop-dorm-17.png"
+  },
+  "prop-dorm-18": {
+    "type": "image",
+    "path": "items/prop-dorm-18.png"
+  },
+  "prop-dorm-19": {
+    "type": "image",
+    "path": "items/prop-dorm-19.png"
+  },
+  "prop-dorm-20": {
+    "type": "image",
+    "path": "items/prop-dorm-20.png"
+  },
+  "prop-dorm-21": {
+    "type": "image",
+    "path": "items/prop-dorm-21.png"
+  },
+  "prop-dorm-22": {
+    "type": "image",
+    "path": "items/prop-dorm-22.png"
+  },
+  "prop-dorm-23": {
+    "type": "image",
+    "path": "items/prop-dorm-23.png"
+  },
+  "prop-dorm-24": {
+    "type": "image",
+    "path": "items/prop-dorm-24.png"
+  },
+  "prop-dorm-25": {
+    "type": "image",
+    "path": "items/prop-dorm-25.png"
+  },
+  "prop-dorm-26": {
+    "type": "image",
+    "path": "items/prop-dorm-26.png"
+  },
+  "prop-dorm-27": {
+    "type": "image",
+    "path": "items/prop-dorm-27.png"
+  },
+  "prop-dorm-28": {
+    "type": "image",
+    "path": "items/prop-dorm-28.png"
+  },
+  "prop-dorm-29": {
+    "type": "image",
+    "path": "items/prop-dorm-29.png"
+  },
+  "prop-dorm-30": {
+    "type": "image",
+    "path": "items/prop-dorm-30.png"
+  },
+  "prop-dorm-31": {
+    "type": "image",
+    "path": "items/prop-dorm-31.png"
+  },
+  "prop-dorm-32": {
+    "type": "image",
+    "path": "items/prop-dorm-32.png"
+  },
+  "prop-dorm-33": {
+    "type": "image",
+    "path": "items/prop-dorm-33.png"
+  },
+  "prop-dorm-34": {
+    "type": "image",
+    "path": "items/prop-dorm-34.png"
+  },
+  "prop-desk-00": {
+    "type": "image",
+    "path": "items/prop-desk-00.png"
+  },
+  "prop-desk-01": {
+    "type": "image",
+    "path": "items/prop-desk-01.png"
+  },
+  "prop-desk-02": {
+    "type": "image",
+    "path": "items/prop-desk-02.png"
+  },
+  "prop-desk-03": {
+    "type": "image",
+    "path": "items/prop-desk-03.png"
+  },
+  "prop-desk-04": {
+    "type": "image",
+    "path": "items/prop-desk-04.png"
+  },
+  "prop-desk-05": {
+    "type": "image",
+    "path": "items/prop-desk-05.png"
+  },
+  "prop-desk-06": {
+    "type": "image",
+    "path": "items/prop-desk-06.png"
+  },
+  "prop-desk-07": {
+    "type": "image",
+    "path": "items/prop-desk-07.png"
+  },
+  "prop-desk-08": {
+    "type": "image",
+    "path": "items/prop-desk-08.png"
+  },
+  "prop-desk-09": {
+    "type": "image",
+    "path": "items/prop-desk-09.png"
+  },
+  "prop-desk-10": {
+    "type": "image",
+    "path": "items/prop-desk-10.png"
+  },
+  "prop-desk-11": {
+    "type": "image",
+    "path": "items/prop-desk-11.png"
+  },
+  "prop-desk-12": {
+    "type": "image",
+    "path": "items/prop-desk-12.png"
+  },
+  "prop-desk-13": {
+    "type": "image",
+    "path": "items/prop-desk-13.png"
+  },
+  "prop-desk-14": {
+    "type": "image",
+    "path": "items/prop-desk-14.png"
+  },
+  "prop-desk-15": {
+    "type": "image",
+    "path": "items/prop-desk-15.png"
+  },
+  "prop-campus-00": {
+    "type": "image",
+    "path": "items/prop-campus-00.png"
+  },
+  "prop-campus-01": {
+    "type": "image",
+    "path": "items/prop-campus-01.png"
+  },
+  "prop-campus-02": {
+    "type": "image",
+    "path": "items/prop-campus-02.png"
+  },
+  "prop-campus-03": {
+    "type": "image",
+    "path": "items/prop-campus-03.png"
+  },
+  "prop-campus-04": {
+    "type": "image",
+    "path": "items/prop-campus-04.png"
+  },
+  "prop-campus-05": {
+    "type": "image",
+    "path": "items/prop-campus-05.png"
+  },
+  "prop-campus-06": {
+    "type": "image",
+    "path": "items/prop-campus-06.png"
+  },
+  "prop-campus-07": {
+    "type": "image",
+    "path": "items/prop-campus-07.png"
+  },
+  "prop-campus-08": {
+    "type": "image",
+    "path": "items/prop-campus-08.png"
+  },
+  "prop-campus-09": {
+    "type": "image",
+    "path": "items/prop-campus-09.png"
+  },
+  "prop-campus-10": {
+    "type": "image",
+    "path": "items/prop-campus-10.png"
+  },
+  "prop-campus-11": {
+    "type": "image",
+    "path": "items/prop-campus-11.png"
+  },
+  "prop-campus-12": {
+    "type": "image",
+    "path": "items/prop-campus-12.png"
+  },
+  "prop-campus-13": {
+    "type": "image",
+    "path": "items/prop-campus-13.png"
+  },
+  "prop-campus-14": {
+    "type": "image",
+    "path": "items/prop-campus-14.png"
+  },
+  "prop-campus-15": {
+    "type": "image",
+    "path": "items/prop-campus-15.png"
+  },
+  "prop-campus-16": {
+    "type": "image",
+    "path": "items/prop-campus-16.png"
+  },
+  "prop-campus-17": {
+    "type": "image",
+    "path": "items/prop-campus-17.png"
+  },
+  "prop-campus-18": {
+    "type": "image",
+    "path": "items/prop-campus-18.png"
+  },
+  "prop-campus-19": {
+    "type": "image",
+    "path": "items/prop-campus-19.png"
+  },
+  "prop-campus-20": {
+    "type": "image",
+    "path": "items/prop-campus-20.png"
+  },
+  "prop-campus-21": {
+    "type": "image",
+    "path": "items/prop-campus-21.png"
+  },
+  "prop-campus-22": {
+    "type": "image",
+    "path": "items/prop-campus-22.png"
+  },
+  "prop-campus-23": {
+    "type": "image",
+    "path": "items/prop-campus-23.png"
+  },
+  "prop-campus-24": {
+    "type": "image",
+    "path": "items/prop-campus-24.png"
+  },
+  "prop-campus-25": {
+    "type": "image",
+    "path": "items/prop-campus-25.png"
+  },
+  "prop-campus-26": {
+    "type": "image",
+    "path": "items/prop-campus-26.png"
+  },
+  "prop-campus-27": {
+    "type": "image",
+    "path": "items/prop-campus-27.png"
+  },
+  "prop-campus-28": {
+    "type": "image",
+    "path": "items/prop-campus-28.png"
+  },
+  "prop-campus-29": {
+    "type": "image",
+    "path": "items/prop-campus-29.png"
+  },
+  "prop-campus-30": {
+    "type": "image",
+    "path": "items/prop-campus-30.png"
+  },
+  "prop-campus-31": {
+    "type": "image",
+    "path": "items/prop-campus-31.png"
+  },
+  "prop-campus-32": {
+    "type": "image",
+    "path": "items/prop-campus-32.png"
+  },
+  "prop-campus-33": {
+    "type": "image",
+    "path": "items/prop-campus-33.png"
+  },
+  "prop-campus-34": {
+    "type": "image",
+    "path": "items/prop-campus-34.png"
+  },
+  "prop-campus-35": {
+    "type": "image",
+    "path": "items/prop-campus-35.png"
+  },
+  "prop-campus-36": {
+    "type": "image",
+    "path": "items/prop-campus-36.png"
+  },
+  "prop-campus-37": {
+    "type": "image",
+    "path": "items/prop-campus-37.png"
+  },
+  "prop-campus-38": {
+    "type": "image",
+    "path": "items/prop-campus-38.png"
+  },
+  "prop-campus-39": {
+    "type": "image",
+    "path": "items/prop-campus-39.png"
+  },
+  "prop-campus-40": {
+    "type": "image",
+    "path": "items/prop-campus-40.png"
+  },
+  "prop-campus-41": {
+    "type": "image",
+    "path": "items/prop-campus-41.png"
+  },
+  "prop-campus-42": {
+    "type": "image",
+    "path": "items/prop-campus-42.png"
+  },
+  "prop-campus-43": {
+    "type": "image",
+    "path": "items/prop-campus-43.png"
+  },
+  "prop-campus-44": {
+    "type": "image",
+    "path": "items/prop-campus-44.png"
+  },
+  "prop-campus-45": {
+    "type": "image",
+    "path": "items/prop-campus-45.png"
+  },
+  "prop-campus-46": {
+    "type": "image",
+    "path": "items/prop-campus-46.png"
+  },
+  "prop-campus-47": {
+    "type": "image",
+    "path": "items/prop-campus-47.png"
+  },
+  "prop-campus-48": {
+    "type": "image",
+    "path": "items/prop-campus-48.png"
+  },
+  "prop-campus-49": {
+    "type": "image",
+    "path": "items/prop-campus-49.png"
+  },
+  "prop-campus-50": {
+    "type": "image",
+    "path": "items/prop-campus-50.png"
+  },
+  "prop-campus-51": {
+    "type": "image",
+    "path": "items/prop-campus-51.png"
+  },
+  "prop-campus-52": {
+    "type": "image",
+    "path": "items/prop-campus-52.png"
+  },
+  "prop-campus-53": {
+    "type": "image",
+    "path": "items/prop-campus-53.png"
+  },
+  "prop-campus-54": {
+    "type": "image",
+    "path": "items/prop-campus-54.png"
+  },
+  "prop-campus-55": {
+    "type": "image",
+    "path": "items/prop-campus-55.png"
+  },
+  "prop-campus-56": {
+    "type": "image",
+    "path": "items/prop-campus-56.png"
+  },
+  "prop-campus-57": {
+    "type": "image",
+    "path": "items/prop-campus-57.png"
+  },
+  "prop-campus-58": {
+    "type": "image",
+    "path": "items/prop-campus-58.png"
+  },
+  "prop-campus-59": {
+    "type": "image",
+    "path": "items/prop-campus-59.png"
+  },
+  "prop-campus-60": {
+    "type": "image",
+    "path": "items/prop-campus-60.png"
+  },
+  "prop-campus-61": {
+    "type": "image",
+    "path": "items/prop-campus-61.png"
+  },
+  "prop-campus-62": {
+    "type": "image",
+    "path": "items/prop-campus-62.png"
+  },
+  "prop-campus-63": {
+    "type": "image",
+    "path": "items/prop-campus-63.png"
+  },
+  "prop-campus-64": {
+    "type": "image",
+    "path": "items/prop-campus-64.png"
+  },
+  "prop-campus-65": {
+    "type": "image",
+    "path": "items/prop-campus-65.png"
+  },
+  "prop-campus-66": {
+    "type": "image",
+    "path": "items/prop-campus-66.png"
+  },
+  "prop-campus-67": {
+    "type": "image",
+    "path": "items/prop-campus-67.png"
+  },
+  "prop-campus-68": {
+    "type": "image",
+    "path": "items/prop-campus-68.png"
+  },
+  "prop-campus-69": {
+    "type": "image",
+    "path": "items/prop-campus-69.png"
+  },
+  "prop-school-00": {
+    "type": "image",
+    "path": "items/prop-school-00.png"
+  },
+  "prop-school-01": {
+    "type": "image",
+    "path": "items/prop-school-01.png"
+  },
+  "prop-school-02": {
+    "type": "image",
+    "path": "items/prop-school-02.png"
+  },
+  "prop-school-03": {
+    "type": "image",
+    "path": "items/prop-school-03.png"
+  },
+  "prop-school-04": {
+    "type": "image",
+    "path": "items/prop-school-04.png"
+  },
+  "prop-school-05": {
+    "type": "image",
+    "path": "items/prop-school-05.png"
+  },
+  "prop-school-06": {
+    "type": "image",
+    "path": "items/prop-school-06.png"
+  },
+  "prop-school-07": {
+    "type": "image",
+    "path": "items/prop-school-07.png"
+  },
+  "prop-school-08": {
+    "type": "image",
+    "path": "items/prop-school-08.png"
+  },
+  "prop-school-09": {
+    "type": "image",
+    "path": "items/prop-school-09.png"
+  },
+  "prop-school-10": {
+    "type": "image",
+    "path": "items/prop-school-10.png"
+  },
+  "prop-school-11": {
+    "type": "image",
+    "path": "items/prop-school-11.png"
+  },
+  "prop-school-12": {
+    "type": "image",
+    "path": "items/prop-school-12.png"
+  },
+  "prop-school-13": {
+    "type": "image",
+    "path": "items/prop-school-13.png"
+  },
+  "prop-school-14": {
+    "type": "image",
+    "path": "items/prop-school-14.png"
+  },
+  "prop-school-15": {
+    "type": "image",
+    "path": "items/prop-school-15.png"
+  },
+  "prop-school-16": {
+    "type": "image",
+    "path": "items/prop-school-16.png"
+  },
+  "prop-school-17": {
+    "type": "image",
+    "path": "items/prop-school-17.png"
+  },
+  "prop-school-18": {
+    "type": "image",
+    "path": "items/prop-school-18.png"
+  },
+  "prop-school-19": {
+    "type": "image",
+    "path": "items/prop-school-19.png"
+  },
+  "prop-school-20": {
+    "type": "image",
+    "path": "items/prop-school-20.png"
+  },
+  "prop-school-21": {
+    "type": "image",
+    "path": "items/prop-school-21.png"
+  },
+  "prop-school-22": {
+    "type": "image",
+    "path": "items/prop-school-22.png"
+  },
+  "prop-school-23": {
+    "type": "image",
+    "path": "items/prop-school-23.png"
+  },
+  "prop-school-24": {
+    "type": "image",
+    "path": "items/prop-school-24.png"
+  },
+  "prop-school-25": {
+    "type": "image",
+    "path": "items/prop-school-25.png"
+  },
+  "prop-school-26": {
+    "type": "image",
+    "path": "items/prop-school-26.png"
+  },
+  "prop-school-27": {
+    "type": "image",
+    "path": "items/prop-school-27.png"
+  },
+  "prop-school-28": {
+    "type": "image",
+    "path": "items/prop-school-28.png"
+  },
+  "prop-school-29": {
+    "type": "image",
+    "path": "items/prop-school-29.png"
+  },
+  "prop-school-30": {
+    "type": "image",
+    "path": "items/prop-school-30.png"
+  },
+  "prop-school-31": {
+    "type": "image",
+    "path": "items/prop-school-31.png"
+  },
+  "prop-school-32": {
+    "type": "image",
+    "path": "items/prop-school-32.png"
+  },
+  "prop-school-33": {
+    "type": "image",
+    "path": "items/prop-school-33.png"
+  },
+  "prop-school-34": {
+    "type": "image",
+    "path": "items/prop-school-34.png"
+  },
+  "prop-school-35": {
+    "type": "image",
+    "path": "items/prop-school-35.png"
+  }
+}

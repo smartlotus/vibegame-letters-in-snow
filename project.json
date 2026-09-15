@@ -1,17 +1,23 @@
 {
-  "name": "letters-in-snow",
+  "name": "流年·雪中信",
   "version": "0.1.0",
   "engine": "vibegame@0.1.0",
   "settings": {
     "width": 1280,
     "height": 720,
+    "scaleMode": "FIT",
     "pixelArt": false,
-    "backgroundColor": "#000000",
+    "backgroundColor": "#03050a",
     "physics": {
       "gravity": { "x": 0, "y": 0 },
       "debug": false
     }
   },
   "startScene": "scenes/main.scene.json",
-  "inputMap": "config/input-map.json"
+  "manifests": ["assets/manifest.json"],
+  "inputMap": "config/input-map.json",
+  "runtimeDefaults": {
+    "dev": { "appBasePath": "", "apiBaseUrl": "" },
+    "deploy": { "appBasePath": "", "apiBaseUrl": "" }
+  }
 }

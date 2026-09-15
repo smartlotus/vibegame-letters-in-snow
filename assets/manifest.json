@@ -1,0 +1,822 @@
+{
+  "bg-church-steps": {
+    "type": "image",
+    "path": "bg/church-steps.jpg"
+  },
+  "bg-church-courtyard": {
+    "type": "image",
+    "path": "bg/church-courtyard.jpg"
+  },
+  "bg-church-interior": {
+    "type": "image",
+    "path": "bg/church-interior.jpg"
+  },
+  "bg-church-alley": {
+    "type": "image",
+    "path": "bg/church-alley.jpg"
+  },
+  "bg-library-night": {
+    "type": "image",
+    "path": "bg/library-night.jpg"
+  },
+  "bg-library-iso": {
+    "type": "image",
+    "path": "bg/library-iso.jpg"
+  },
+  "bg-library-hall": {
+    "type": "image",
+    "path": "bg/library-hall.jpg"
+  },
+  "bg-classroom-empty": {
+    "type": "image",
+    "path": "bg/classroom-empty.jpg"
+  },
+  "bg-classroom-crowd": {
+    "type": "image",
+    "path": "bg/classroom-crowd.jpg"
+  },
+  "bg-corridor": {
+    "type": "image",
+    "path": "bg/corridor.jpg"
+  },
+  "bg-avenue-dusk": {
+    "type": "image",
+    "path": "bg/avenue-dusk.jpg"
+  },
+  "bg-avenue-night": {
+    "type": "image",
+    "path": "bg/avenue-night.jpg"
+  },
+  "bg-crossroad-dusk": {
+    "type": "image",
+    "path": "bg/crossroad-dusk.jpg"
+  },
+  "bg-crossroad-autumn": {
+    "type": "image",
+    "path": "bg/crossroad-autumn.jpg"
+  },
+  "bg-park-stream": {
+    "type": "image",
+    "path": "bg/park-stream.jpg"
+  },
+  "bg-park-night": {
+    "type": "image",
+    "path": "bg/park-night.jpg"
+  },
+  "bg-lamppost-talk": {
+    "type": "image",
+    "path": "bg/lamppost-talk.jpg"
+  },
+  "bg-canal-path": {
+    "type": "image",
+    "path": "bg/canal-path.jpg"
+  },
+  "bg-heroine-study": {
+    "type": "image",
+    "path": "bg/heroine-study.jpg"
+  },
+  "bg-heroine-room": {
+    "type": "image",
+    "path": "bg/heroine-room.jpg"
+  },
+  "bg-dorm-night": {
+    "type": "image",
+    "path": "bg/dorm-night.jpg"
+  },
+  "bg-dorm-study": {
+    "type": "image",
+    "path": "bg/dorm-study.jpg"
+  },
+  "bg-dorm-night-alt": {
+    "type": "image",
+    "path": "bg/dorm-night-alt.jpg"
+  },
+  "bg-dorm-night-2": {
+    "type": "image",
+    "path": "bg/dorm-night-2.jpg"
+  },
+  "bg-foyer": {
+    "type": "image",
+    "path": "bg/foyer.jpg"
+  },
+  "bg-foyer-alt": {
+    "type": "image",
+    "path": "bg/foyer-alt.jpg"
+  },
+  "bg-cabin-fire": {
+    "type": "image",
+    "path": "bg/cabin-fire.jpg"
+  },
+  "bg-cabin-fire-alt": {
+    "type": "image",
+    "path": "bg/cabin-fire-alt.jpg"
+  },
+  "bg-hillside-home": {
+    "type": "image",
+    "path": "bg/hillside-home.jpg"
+  },
+  "bg-village-return": {
+    "type": "image",
+    "path": "bg/village-return.jpg"
+  },
+  "bg-storyboard-12": {
+    "type": "image",
+    "path": "bg/storyboard-12.jpg"
+  },
+  "bg-crossroad-autumn-alt": {
+    "type": "image",
+    "path": "bg/crossroad-autumn-alt.jpg"
+  },
+  "bust-lute-calm": {
+    "type": "image",
+    "path": "char/bust-lute-calm.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-open": {
+    "type": "image",
+    "path": "char/bust-lute-open.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-ponder": {
+    "type": "image",
+    "path": "char/bust-lute-ponder.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-shocked": {
+    "type": "image",
+    "path": "char/bust-lute-shocked.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-weary": {
+    "type": "image",
+    "path": "char/bust-lute-weary.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-stern": {
+    "type": "image",
+    "path": "char/bust-lute-stern.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-smile-closed": {
+    "type": "image",
+    "path": "char/bust-lute-smile-closed.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-lute-gloom": {
+    "type": "image",
+    "path": "char/bust-lute-gloom.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-neutral": {
+    "type": "image",
+    "path": "char/bust-tess-neutral.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-smile": {
+    "type": "image",
+    "path": "char/bust-tess-smile.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-warm-smile": {
+    "type": "image",
+    "path": "char/bust-tess-warm-smile.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-pout": {
+    "type": "image",
+    "path": "char/bust-tess-pout.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-earnest": {
+    "type": "image",
+    "path": "char/bust-tess-earnest.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-dejected": {
+    "type": "image",
+    "path": "char/bust-tess-dejected.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-calm": {
+    "type": "image",
+    "path": "char/bust-tess-calm.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-tess-resolute": {
+    "type": "image",
+    "path": "char/bust-tess-resolute.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-calm": {
+    "type": "image",
+    "path": "char/bust-heroine-calm.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-smile": {
+    "type": "image",
+    "path": "char/bust-heroine-smile.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-angry": {
+    "type": "image",
+    "path": "char/bust-heroine-angry.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-shocked": {
+    "type": "image",
+    "path": "char/bust-heroine-shocked.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-weary": {
+    "type": "image",
+    "path": "char/bust-heroine-weary.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-serious": {
+    "type": "image",
+    "path": "char/bust-heroine-serious.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-sad": {
+    "type": "image",
+    "path": "char/bust-heroine-sad.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "bust-heroine-worried": {
+    "type": "image",
+    "path": "char/bust-heroine-worried.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "walk-lute": {
+    "type": "spritesheet",
+    "path": "char/walk-lute.png",
+    "frameWidth": 119,
+    "frameHeight": 248,
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "walk-tess": {
+    "type": "spritesheet",
+    "path": "char/walk-tess.png",
+    "frameWidth": 130,
+    "frameHeight": 293,
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "walk-heroine": {
+    "type": "spritesheet",
+    "path": "char/walk-heroine.png",
+    "frameWidth": 108,
+    "frameHeight": 294,
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-00": {
+    "type": "image",
+    "path": "char/npc-00.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-01": {
+    "type": "image",
+    "path": "char/npc-01.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-02": {
+    "type": "image",
+    "path": "char/npc-02.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-03": {
+    "type": "image",
+    "path": "char/npc-03.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-04": {
+    "type": "image",
+    "path": "char/npc-04.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-05": {
+    "type": "image",
+    "path": "char/npc-05.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-06": {
+    "type": "image",
+    "path": "char/npc-06.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-07": {
+    "type": "image",
+    "path": "char/npc-07.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-08": {
+    "type": "image",
+    "path": "char/npc-08.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-09": {
+    "type": "image",
+    "path": "char/npc-09.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-10": {
+    "type": "image",
+    "path": "char/npc-10.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-11": {
+    "type": "image",
+    "path": "char/npc-11.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-12": {
+    "type": "image",
+    "path": "char/npc-12.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-13": {
+    "type": "image",
+    "path": "char/npc-13.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-14": {
+    "type": "image",
+    "path": "char/npc-14.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "npc-15": {
+    "type": "image",
+    "path": "char/npc-15.png",
+    "pivot": [
+      0.5,
+      1
+    ]
+  },
+  "fx-snow": {
+    "type": "spritesheet",
+    "path": "fx/snow.png",
+    "frameWidth": 120,
+    "frameHeight": 132,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-wind": {
+    "type": "spritesheet",
+    "path": "fx/wind.png",
+    "frameWidth": 156,
+    "frameHeight": 71,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-footprint": {
+    "type": "spritesheet",
+    "path": "fx/footprint.png",
+    "frameWidth": 89,
+    "frameHeight": 139,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-cross-glow": {
+    "type": "spritesheet",
+    "path": "fx/cross-glow.png",
+    "frameWidth": 131,
+    "frameHeight": 130,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-ring": {
+    "type": "spritesheet",
+    "path": "fx/ring.png",
+    "frameWidth": 158,
+    "frameHeight": 173,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-wave": {
+    "type": "spritesheet",
+    "path": "fx/wave.png",
+    "frameWidth": 304,
+    "frameHeight": 115,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-glow": {
+    "type": "spritesheet",
+    "path": "fx/glow.png",
+    "frameWidth": 174,
+    "frameHeight": 172,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-ink": {
+    "type": "spritesheet",
+    "path": "fx/ink.png",
+    "frameWidth": 205,
+    "frameHeight": 206,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-ripple": {
+    "type": "spritesheet",
+    "path": "fx/ripple.png",
+    "frameWidth": 183,
+    "frameHeight": 61,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-splash": {
+    "type": "spritesheet",
+    "path": "fx/splash.png",
+    "frameWidth": 151,
+    "frameHeight": 94,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "fx-sprout": {
+    "type": "spritesheet",
+    "path": "fx/sprout.png",
+    "frameWidth": 119,
+    "frameHeight": 108,
+    "pivot": [
+      0.5,
+      0.5
+    ]
+  },
+  "item-cross": {
+    "type": "image",
+    "path": "items/cross.png"
+  },
+  "item-cross-snow": {
+    "type": "image",
+    "path": "items/cross-snow.png"
+  },
+  "item-glasses": {
+    "type": "image",
+    "path": "items/glasses.png"
+  },
+  "item-boots": {
+    "type": "image",
+    "path": "items/boots.png"
+  },
+  "item-satchel": {
+    "type": "image",
+    "path": "items/satchel.png"
+  },
+  "item-book": {
+    "type": "image",
+    "path": "items/book.png"
+  },
+  "item-book-open": {
+    "type": "image",
+    "path": "items/book-open.png"
+  },
+  "item-pen": {
+    "type": "image",
+    "path": "items/pen.png"
+  },
+  "item-letter-scraps": {
+    "type": "image",
+    "path": "items/letter-scraps.png"
+  },
+  "item-envelope": {
+    "type": "image",
+    "path": "items/envelope.png"
+  },
+  "item-envelopes": {
+    "type": "image",
+    "path": "items/envelopes.png"
+  },
+  "item-letters": {
+    "type": "image",
+    "path": "items/letters.png"
+  },
+  "item-drawer-letter": {
+    "type": "image",
+    "path": "items/drawer-letter.png"
+  },
+  "item-mirror": {
+    "type": "image",
+    "path": "items/mirror.png"
+  },
+  "item-lamp": {
+    "type": "image",
+    "path": "items/lamp.png"
+  },
+  "item-lamp-dark": {
+    "type": "image",
+    "path": "items/lamp-dark.png"
+  },
+  "ui-panel-lg": {
+    "type": "image",
+    "path": "ui/panel-lg.png"
+  },
+  "ui-row-idle": {
+    "type": "image",
+    "path": "ui/row-idle.png"
+  },
+  "ui-row-hi": {
+    "type": "image",
+    "path": "ui/row-hi.png"
+  },
+  "ui-btn-brown-hi": {
+    "type": "image",
+    "path": "ui/btn-brown-hi.png"
+  },
+  "ui-btn-brown": {
+    "type": "image",
+    "path": "ui/btn-brown.png"
+  },
+  "ui-panel-md": {
+    "type": "image",
+    "path": "ui/panel-md.png"
+  },
+  "ui-bar-diamonds": {
+    "type": "image",
+    "path": "ui/bar-diamonds.png"
+  },
+  "ui-divider": {
+    "type": "image",
+    "path": "ui/divider.png"
+  },
+  "ui-panel-square": {
+    "type": "image",
+    "path": "ui/panel-square.png"
+  },
+  "ui-frame-dashed": {
+    "type": "image",
+    "path": "ui/frame-dashed.png"
+  },
+  "ui-arrow-0": {
+    "type": "image",
+    "path": "ui/arrow-0.png"
+  },
+  "ui-arrow-1": {
+    "type": "image",
+    "path": "ui/arrow-1.png"
+  },
+  "ui-arrow-2": {
+    "type": "image",
+    "path": "ui/arrow-2.png"
+  },
+  "ui-arrow-3": {
+    "type": "image",
+    "path": "ui/arrow-3.png"
+  },
+  "ui-tab": {
+    "type": "image",
+    "path": "ui/tab.png"
+  },
+  "ui-card-dark": {
+    "type": "image",
+    "path": "ui/card-dark.png"
+  },
+  "ui-panel-tall-tabs": {
+    "type": "image",
+    "path": "ui/panel-tall-tabs.png"
+  },
+  "ui-note-clip": {
+    "type": "image",
+    "path": "ui/note-clip.png"
+  },
+  "ui-btn-sm-0": {
+    "type": "image",
+    "path": "ui/btn-sm-0.png"
+  },
+  "ui-btn-sm-1": {
+    "type": "image",
+    "path": "ui/btn-sm-1.png"
+  },
+  "ui-btn-sm-2": {
+    "type": "image",
+    "path": "ui/btn-sm-2.png"
+  },
+  "ui-btn-sm-3": {
+    "type": "image",
+    "path": "ui/btn-sm-3.png"
+  },
+  "ui-progress": {
+    "type": "image",
+    "path": "ui/progress.png"
+  },
+  "ui-panel-wide": {
+    "type": "image",
+    "path": "ui/panel-wide.png"
+  },
+  "ui-card-v0": {
+    "type": "image",
+    "path": "ui/card-v0.png"
+  },
+  "ui-card-v1": {
+    "type": "image",
+    "path": "ui/card-v1.png"
+  },
+  "ui-card-v2": {
+    "type": "image",
+    "path": "ui/card-v2.png"
+  },
+  "ui-card-v3": {
+    "type": "image",
+    "path": "ui/card-v3.png"
+  },
+  "ui-dropdown": {
+    "type": "image",
+    "path": "ui/dropdown.png"
+  },
+  "ui-dropdown-2": {
+    "type": "image",
+    "path": "ui/dropdown-2.png"
+  },
+  "ui-checkbox": {
+    "type": "image",
+    "path": "ui/checkbox.png"
+  },
+  "ui-checkbox-2": {
+    "type": "image",
+    "path": "ui/checkbox-2.png"
+  },
+  "ui-checkbox-on": {
+    "type": "image",
+    "path": "ui/checkbox-on.png"
+  },
+  "ui-checkbox-on-green": {
+    "type": "image",
+    "path": "ui/checkbox-on-green.png"
+  },
+  "ui-panel-xl": {
+    "type": "image",
+    "path": "ui/panel-xl.png"
+  },
+  "ui-icon-alert": {
+    "type": "image",
+    "path": "ui/icon-alert.png"
+  },
+  "ui-icon-snow": {
+    "type": "image",
+    "path": "ui/icon-snow.png"
+  },
+  "ui-icon-sound": {
+    "type": "image",
+    "path": "ui/icon-sound.png"
+  },
+  "ui-icon-screen": {
+    "type": "image",
+    "path": "ui/icon-screen.png"
+  },
+  "ui-icon-wheel": {
+    "type": "image",
+    "path": "ui/icon-wheel.png"
+  },
+  "ui-icon-save": {
+    "type": "image",
+    "path": "ui/icon-save.png"
+  },
+  "ui-icon-hazard": {
+    "type": "image",
+    "path": "ui/icon-hazard.png"
+  }
+}
