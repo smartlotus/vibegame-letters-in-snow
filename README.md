@@ -60,6 +60,21 @@ tools/
 
 方向键 / WASD 走动 · 空格 / 回车 继续 · ESC 暂停菜单（回想 / 留印 / 回标题）
 
+## 画面
+
+`docs/screenshots/`（由运行时 Runtime API 截图，非 mockup）：
+
+| 文件 | 内容 |
+|---|---|
+| `01-title.jpg` | 标题「流年 / 雪中信」+ 四个入口 |
+| `02-prologue.jpg` | 序章 · 教堂台阶（旁白 + 对话框） |
+| `03-choice.jpg` | 第一章的岔口：三个选项行 |
+| `04-walk.jpg` | 序章行走段（路特 + 顶端「弦」指示） |
+| `05-string-taut.jpg` | 弦绷紧时的状态（雪山小屋 + 留印提示） |
+| `06-letter.jpg` | 第五章五行信小游戏 |
+| `07-seven-days.jpg` | 第七章七日独处 |
+| `08-impressions.jpg` | 留印收集面板 |
+
 ## 素材来源
 
 `流年/photos/` 的 69 张 AI 生成资产表 → 395 个资源键：
