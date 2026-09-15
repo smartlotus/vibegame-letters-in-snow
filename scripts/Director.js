@@ -1,5 +1,5 @@
 import { Node } from '/engine/Node.js'
-import { CHAPTERS, IMPRESSIONS, FINALES } from './StoryData.js'
+import { CHAPTERS, IMPRESSIONS, FINALES, CLOSING } from './StoryData.js'
 
 const SAVE_KEY = 'liunian.snow.save.v1'
 const COLLECTION_KEY = 'liunian.snow.collection.v1'
@@ -21,6 +21,8 @@ export default class Director extends Node {
 
     this.mode = 'idle'          // idle | story | walk | overlay
     this._walkQueue = []
+    this._walkSeq = 0
+    this._autoParkedWalk = -1
     this._paused = false
     this._abort = false
     this._labels = new Map()
@@ -447,6 +449,7 @@ export default class Director extends Node {
     this.ui.showString(false)
     this.ui.whisper('')
     this._walkQueue = []
+    this._walkSeq = (this._walkSeq || 0) + 1
     this.mode = 'walk'
     const w = this.stage.spawnWalker(cfg)
     w.setHotspots(cfg.hotspots || [])
@@ -514,6 +517,15 @@ export default class Director extends Node {
     this.ui.snow(this.state.finale === 'return' ? 'on' : 'heavy')
     await this.ui.curtain(false, 900)
     await this._runSequence(fin.lines.map((l) => ({ narr: l.narr })))
+
+    // both branches land on the same last image: the footprints in the snow
+    // and a door that closes behind him.
+    await this.ui.curtain(true, 900)
+    await this.stage.setBackground(CLOSING.bg, { immediate: true })
+    this.ui.snow('on')
+    await this.ui.curtain(false, 1100)
+    await this._runSequence(CLOSING.lines.map((l) => ({ narr: l.narr })))
+    await this.ui.curtain(true, 1400)
 
     const total = IMPRESSIONS.length
     await this.ui.statsPanel({
@@ -637,8 +649,8 @@ export default class Director extends Node {
    * @param {boolean} on
    * @param {{pick?: number, delay?: number}} [opts]
    */
-  setAuto(on, { pick = 0, delay = 90, stopAtChoice = false } = {}) {
-    this._auto = on ? { pick, delay, stopAtChoice } : null
+  setAuto(on, { pick = 0, delay = 90, stopAtChoice = false, stopAtWalk = false } = {}) {
+    this._auto = on ? { pick, delay, stopAtChoice, stopAtWalk } : null
     if (on) this._autoTick()
   }
 
@@ -652,6 +664,11 @@ export default class Director extends Node {
       if (this.mode === 'walk') {
         const w = this.stage.walker
         if (w) {
+          if (this._auto.stopAtWalk && this._autoParkedWalk !== this._walkSeq && !this._walkQueue.length && !w._arrive) {
+            this._autoParkedWalk = this._walkSeq
+            this._auto = null
+            return   // park on the first frame of the walk
+          }
           const hs = w.activeHotspot()
           if (hs) {
             if (!this._walkQueue.some((q) => q.id === hs.id)) this._walkQueue.push(hs)
@@ -732,6 +749,7 @@ export default class Director extends Node {
       finale: this.state.finale,
       title: this.ui?.showingTitle() ?? false,
       waiter: this.ui?._waiter?.kind ?? null,
+      walkSeq: this._walkSeq || 0,
       walker: this.stage?.walker?.runtimeState() ?? null,
       busts: Object.keys(this.ui?.bustNodes || {}),
     }

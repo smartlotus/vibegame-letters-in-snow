@@ -89,6 +89,11 @@ export default class Walker {
   despawn() {
     if (this.sprite) { this.sprite.destroy(); this.sprite = null }
     this._clearFootprints()
+    // Hotspot markers are own sprites; leaving them behind leaves stray
+    // floating icons on the next background. Clear them with the walker.
+    for (const h of this.hotspots) h.sprite?.destroy()
+    this.hotspots = []
+    this._hotspotHit = new Set()
     this.active = false
     this.moving = false
     this._playing = null

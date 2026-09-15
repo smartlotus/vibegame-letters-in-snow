@@ -751,9 +751,8 @@ export default class VnUi extends Node {
       <div class="mark"><i></i><i></i></div>
       <h1>流 年</h1>
       <div class="sub">雪 中 信</div>
-      <div class="en">LETTERS IN SNOW</div>
       <div class="menu"></div>
-      <div class="foot">改编自同名小说 · 全九章</div>`
+      <div class="foot">LETTERS IN SNOW&nbsp;&nbsp;·&nbsp;&nbsp;改编自同名小说&nbsp;&nbsp;·&nbsp;&nbsp;全九章</div>`
     const menu = this.titleEl.querySelector('.menu')
 
     let resolveFn = () => {}

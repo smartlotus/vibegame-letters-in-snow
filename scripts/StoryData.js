@@ -48,6 +48,11 @@ export const IMPRESSIONS = [
   { id: 'i-frozen', title: '冻土', text: '不是那个妇人平缓的声音，而是从某个更远的地方，从雪地下面，从冻土深处，直接传进他的骨头里。' },
   { id: 'i-blackeyes', title: '漆黑的眼睛', text: '她有着一双漆黑得近乎幽深的眼睛，讲述时语气平缓得不着一丝波澜。' },
   { id: 'i-string', title: '弦', text: '当一根弦被绷到最紧的极致时，要么断裂，要么触底反弹。' },
+  // —— 框架层（路特）新增三枚，只在走完对应行走段的热点后才拿得到 ——
+  { id: 'i-still', title: '雪把声音吸掉', text: '雪把声音都吸掉了。他听见自己的脚步，又好像没听见。' },
+  { id: 'i-breath', title: '一口白气', text: '他停下来，呼出一口白气。白气散得很快。' },
+  { id: 'i-notknow', title: '我不知道', text: '他当时不知道这句话是谁说的，现在还是不知道。但他已经不想问了。' },
+  { id: 'i-door', title: '推开门', text: '他推开门，走了进去。' },
 ]
 
 /* ==================================================================== *
@@ -106,6 +111,8 @@ const CH0 = {
               { fx: 'shake' },
               { narr: '他猛地伸手扶住栏杆，掌心被铁锈擦出一道白印。' },
               { say: { name: '路特', who: 'lute', mood: 'shocked', text: '……' } },
+              { narr: '有那么一瞬间，他觉得自己听到了一句话——不是那个妇人平缓的声音，而是从某个更远的地方，从雪地下面，从冻土深处，直接传进他的骨头里。' },
+              { imp: 'i-frozen' },
             ],
           },
           {
@@ -569,6 +576,51 @@ const CH4 = {
     { narr: '北境的冬天，迎来了它最深沉、也最寒冷的一段假期。' },
     { snow: 'heavy' },
     { pause: 900 },
+
+    // ---- 间章行走：故事的最低点，回到路特的雪里喘一口气 ----
+    { curtain: true },
+    { bg: 'bg-church-alley', fade: 1, immediate: true },
+    { tint: 0x0a1020, alpha: 0.42, duration: 900 },
+    { curtain: false },
+    { card: { num: '间 章', title: '雪还在下', sub: '阿尔镇 · 教堂后面的巷子' } },
+    { narr: '路特绕到了教堂后面那条巷子。' },
+    { narr: '他想找个没有人的地方，把这个故事再想一遍。' },
+    {
+      walk: {
+        texture: 'walk-lute',
+        x: 250, y: 585, facing: 'right',
+        bounds: { x: 130, y: 440, w: 1020, h: 200 },
+        hints: '方向键 / WASD 走动 · 空格 交互',
+        doneWhen: 'all',
+        hotspots: [
+          {
+            id: 'still', x: 560, y: 545, size: 46, r: 96,
+            then: [
+              { narr: '巷子里的雪积得比别处厚，踩下去能没过鞋帮。' },
+              { narr: '雪把声音都吸掉了。他听见自己的脚步，又好像没听见。' },
+              { narr: '那两个月，那两个人是不是也活在这样的雪里——什么都听得见，什么都传不出去。' },
+              { imp: 'i-still' },
+            ],
+          },
+          {
+            id: 'breath', x: 900, y: 545, size: 46, r: 96,
+            then: [
+              { narr: '他停下来，呼出一口白气。' },
+              { bust: { id: 'lute', key: 'bust-lute-weary', side: 'center' } },
+              { say: { name: '路特', who: 'lute', mood: 'weary', text: '……六十三天了。' } },
+              { narr: '他数过。从那个学期结束的那天算起，到今天，六十三天。' },
+              { say: { name: '路特', who: 'lute', mood: 'ponder', text: '她说她写信了。' } },
+              { narr: '白气散得很快。他忽然想知道，一个人要攥着一句「我们能不能和好」，攥上一个下午，手心会是什么感觉。' },
+              { imp: 'i-breath' },
+              { clearBusts: true },
+            ],
+          },
+        ],
+      },
+    },
+    { bg: 'bg-church-alley', fade: 900 },
+    { narr: '雪还在下。他站了一会儿，然后往回走。' },
+    { pause: 800 },
     { end: true },
   ],
 }
@@ -1103,23 +1155,68 @@ const CH8 = {
     { curtain: false },
     { card: { num: '尾 声', title: '雪停了', sub: '阿尔镇 · 家门口' } },
     { narr: '路特走回到家门口的时候，雪已经停了。' },
-    { bust: { id: 'lute', key: 'bust-lute-weary', side: 'center' } },
-    { narr: '他在门廊上跺了跺脚，把靴子上的雪抖掉。' },
-    { narr: '然后他站在那儿，看着远处的山。' },
-    { narr: '山是白的，天是灰的，中间那条分界线已经看不清了。' },
-    { narr: '他想起早上弥撒时听到的那句话——「我不知道。」' },
-    { narr: '当他听到那个女人在讲这个故事的时候，第一句就是这一句。' },
-    { narr: '他当时不知道这句话是谁说的，现在还是不知道。' },
-    { narr: '但他已经不想问了。' },
-    { narr: '也许有些话不需要知道出处。它们飘在空气里，落下来，被雪盖上，等来年春天融化之后，又变成别的东西。' },
+    { pause: 600 },
+
+    // ---- 终章行走：玩家自己走完这最后一段雪路 ----
+    { curtain: true },
+    { bg: 'bg-hillside-home', fade: 1, immediate: true },
+    { tint: 0x0e1626, alpha: 0.28, duration: 900 },
+    { snow: 'on' },
+    { curtain: false },
+    { narr: '从教堂到家门口，要穿过半个阿尔镇。' },
+    { narr: '他走得很慢。这一路上，他把那个故事又想了一遍。' },
+    {
+      walk: {
+        texture: 'walk-lute',
+        x: 140, y: 660, facing: 'right',
+        bounds: { x: 60, y: 430, w: 560, h: 250 },
+        hints: '方向键 / WASD 走动 · 空格 交互',
+        doneWhen: 'all',
+        hotspots: [
+          {
+            id: 'mountain', x: 250, y: 520, size: 46, r: 96,
+            then: [
+              { narr: '他停下来，看着远处的山。' },
+              { narr: '山是白的，天是灰的，中间那条分界线已经看不清了。' },
+              { narr: '他想起早上弥撒时听到的那句话——「我不知道。」' },
+              { narr: '当那个女人在讲这个故事的时候，第一句就是这一句。' },
+              { narr: '他当时不知道这句话是谁说的，现在还是不知道。' },
+              { narr: '但他已经不想问了。' },
+              { imp: 'i-notknow' },
+            ],
+          },
+          {
+            id: 'palm', x: 380, y: 500, size: 46, r: 96,
+            then: [
+              { narr: '也许有些话不需要知道出处。' },
+              { narr: '它们飘在空气里，落下来，被雪盖上，等来年春天融化之后，又变成别的东西。' },
+              { bust: { id: 'lute', key: 'bust-lute-ponder', side: 'center' } },
+              { narr: '他从口袋里掏出那枚十字架。' },
+              { narr: '金子没有在发光，只是安静地躺在他的掌心。他合上手掌，又张开。又合上。' },
+              { narr: '他脑海中掠过那年轻妇人的那双深邃漆黑的眼睛。' },
+              { say: { name: '路特', who: 'lute', mood: 'ponder', text: '她和她一样，都害怕被看透。' } },
+              { clearBusts: true },
+            ],
+          },
+          {
+            id: 'door', x: 520, y: 480, size: 50, r: 104,
+            then: [
+              { narr: '他在门廊上跺了跺脚，把靴子上的雪抖掉。' },
+              { narr: '雪从他身上落下来，落在已经有一串脚印的石阶上。' },
+              { bust: { id: 'lute', key: 'bust-lute-weary', side: 'center' } },
+              { say: { name: '路特', who: 'lute', mood: 'weary', text: '……' } },
+              { imp: 'i-door' },
+              { clearBusts: true },
+            ],
+          },
+        ],
+      },
+    },
+
+    { bg: 'bg-hillside-home', fade: 800 },
+    { narr: '他站在门口，没有立刻进去。' },
+    { narr: '那枚十字架还在他手里。' },
     { pause: 700 },
-    { clearBusts: true },
-    { narr: '他从口袋里掏出那枚十字架。' },
-    { narr: '金子没有在发光，只是安静地躺在他的掌心。他合上手掌，又张开。又合上。' },
-    { narr: '他脑海中掠过那年轻妇人的那双深邃漆黑的眼睛。' },
-    { narr: '他想，她和她一样，都害怕被看透。' },
-    { imp: 'i-frozen' },
-    { pause: 900 },
 
     {
       finalChoice: {
@@ -1132,14 +1229,21 @@ const CH8 = {
     },
 
     { clearBusts: true },
-    { curtain: true },
-    { flashText: '断 裂', kind: 'cold', hold: 1200 },
-    { blackout: false },
-    { curtain: false },
-    { narr: '他推开门，走了进去。' },
-    { pause: 1200 },
+    { pause: 700 },
     { stats: true },
     { end: true },
+  ],
+}
+
+/* ==================================================================== *
+ *  收尾（无论选哪一支，最后都回到同一张雪地里的脚印）
+ * ==================================================================== */
+
+export const CLOSING = {
+  bg: 'bg-village-return',
+  lines: [
+    { narr: '他推开门，走了进去。' },
+    { narr: '门在他身后合上，把外面那一片白关住了。' },
   ],
 }
 

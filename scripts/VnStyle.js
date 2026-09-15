@@ -374,15 +374,11 @@ export const VN_CSS = `
   animation: vn-fade 1.7s ease both;
 }
 .vn-title .sub {
-  margin-top: 16px; font-size: 15px; letter-spacing: .5em; text-indent: .5em; color: #9b9482;
+  margin-top: 18px; font-size: 16px; letter-spacing: .54em; text-indent: .54em; color: #a8a08c;
   animation: vn-fade 2.4s ease both;
 }
-.vn-title .en {
-  margin-top: 18px; font-size: 10.5px; letter-spacing: .58em; text-indent: .58em; color: #6a6459;
-  font-family: Georgia, serif; animation: vn-fade 2.6s ease both;
-}
 .vn-title .menu {
-  display: flex; flex-direction: column; gap: 8px; margin-top: 38px; width: 336px;
+  display: flex; flex-direction: column; gap: 8px; margin-top: 52px; width: 336px;
   animation: vn-fade 3s ease both;
 }
 .vn-title .menu .vn-btn {
@@ -390,7 +386,9 @@ export const VN_CSS = `
   border-width: 15px; border-image-width: 15px;
 }
 .vn-title .menu .vn-btn .sub { margin-top: 2px; font-size: 11.5px; }
-.vn-title .foot { position: absolute; bottom: 22px; font-size: 11.5px; letter-spacing: .3em; color: #4d4840; }
+.vn-title .foot {
+  position: absolute; bottom: 22px; font-size: 11.5px; letter-spacing: .26em; color: #4d4840;
+}
 
 /* ---------- pause button ---------- */
 .vn-pausebtn {

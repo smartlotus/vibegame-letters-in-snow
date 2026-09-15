@@ -17,13 +17,13 @@ vibegame play --port 8780 activate
 ## Core Gameplay
 
 叙事视觉小说 + 框架层轻探索。读一段故事 → 遇到一个没有正确答案的岔口 → 选择把「弦」拉紧 →
-弦到临界时**断裂**或**触底反弹** → 进入下一章，世界更冷一档。全篇 9 章、607 个节点。
+弦到临界时**断裂**或**触底反弹** → 进入下一章，世界更冷一档。全篇 9 章、609 个节点。
 
 **Player Actions:**
 
 - **推进文本**：点击任意位置 / 空格 / 回车。打字机进行中时按一下是「立刻显示全文」，再按才是推进
 - **选择**：点击选项行，或用 ↑↓ 移动光标 + 空格确认。选项右下角显示代价提示（`靠近 · 快` / `退 · 见血`）
-- **框架层行走**（序章）：方向键 / WASD 四向走动；走近浮动的「留印」图标后按空格触发；走满三个热点自动进入下一段
+- **框架层行走**（序章 / 间章 / 终章共三段）：方向键 / WASD 四向走动；走近浮动的「留印」图标后按空格触发；走满全部热点自动进入下一段
 - **五行信小游戏**（第五章）：点选句子加入信纸，点已选的句子取消；**必须恰好 5 行**「寄出这封信」才可用
 - **七日独处**（第七章）：点「第一天…第七天」按钮逐日推进
 - **暂停菜单**：ESC → 继续 / 回想（最近 90 条）/ 留印 / 回标题
@@ -50,7 +50,7 @@ vibegame play --port 8780 activate
 |---|---|---|
 | 「弦」张力 | `VnUi.setTension` + `Director._addTension` | 0…1.18 单一数值，UI 只给状态词（松弛/微紧/拉直/绷紧/将断），**不给数字** |
 | 临界分流 | `Director._crit` | `crit: true` 按伸手(lean)/退开(retreat)比例分流；`crit: 'cold'/'warm'` 强制 |
-| 留印 | `Director._grantImpression` | 26 枚；**跨周目累积**（`localStorage: liunian.snow.collection.v1`），部分只在单条分支上 |
+| 留印 | `Director._grantImpression` | 30 枚；**跨周目累积**（`localStorage: liunian.snow.collection.v1`），部分只在单条分支上 |
 | 存读档 | `Director._save/_loadRaw` | `localStorage: liunian.snow.save.v1`，每个节点自动写 |
 | 行走 | `Stage.spawnWalker` + `Walker` | 4 行 × 4 帧精灵表（行序 `down/left/right/up`，见 `assets/char/walk-layout.json`） |
 | 剧本解释 | `Director._runNode` | 节点字典见 `scripts/StoryData.js` 顶部注释 |
@@ -73,7 +73,7 @@ vibegame play --port 8780 activate
 
 ```bash
 node tools/audit_story.mjs
-# 预期：IMPRESSIONS reachable: 26 / choices: 7 (19 options) / PROBLEMS: (none)
+# 预期：IMPRESSIONS reachable: 30 / choices: 7 (19 options) / PROBLEMS: (none)
 
 python tools/verify_assets.py
 # 预期：ALL PASS
@@ -99,7 +99,8 @@ vibegame play --port 8780 eval 'const d=sceneTree.findByTag("director")[0]; cons
 vibegame play --port 8780 eval 'const d=sceneTree.findByTag("director")[0]; return d.runtimeState();'
 vibegame play --port 8780 console -l error      # 预期：空
 ```
-预期中途读数：`lean + retreat == 7`（7 个岔口都真的走过分支），`impressions` 20–26。
+预期中途读数：`lean + retreat == 7`（7 个岔口都真的走过分支），`impressions` 20–30。
+三段行走段会自动走位并触发热点（`_autoTick` 在 `mode==='walk'` 时驱动 `walker.moveTo`）。
 
 ### Scenario 3: 停在某个选项看画面
 
@@ -122,7 +123,7 @@ vibegame play --port 8780 eval 'const d=sceneTree.findByTag("director")[0]; cons
 
 | 方法 | 用途 |
 |---|---|
-| `setAuto(on, {pick, delay, stopAtChoice})` | 自动推进 + 自动选第 `pick` 个选项；`stopAtChoice` 遇到岔口就停下 |
+| `setAuto(on, {pick, delay, stopAtChoice, stopAtWalk})` | 自动推进 + 自动选第 `pick` 个选项；`stopAtChoice` 遇到岔口就停下；`stopAtWalk` 每次进入新的行走段时停下（用 `_walkSeq` 计数，不会在同一段重复停） |
 | `debugGoto(chapterIndex)` | 把章节游标设到某章开头（会与正在跑的循环竞争，只在 idle 时可靠） |
 | `runtimeState()` | 快照：mode / chapter / node / tension / lean / retreat / impressions / finale / walker / busts |
 
@@ -138,7 +139,7 @@ await 它会让 `propagateReady` 挂住、引擎 boot 卡死、Runtime bridge �
 - **移动端未适配**：1280×720 固定逻辑尺寸，FIT 缩放；触屏没做手势。
 - **背景是 JPEG**：为把预加载从 48.9MB 压到 8.2MB，32 张背景从 PNG 转成 q90 渐进 JPEG。
   深色渐变区在高倍放大下能看出轻微色带。
-- **架上层（frame 层）只有序章一段**：其余框架层内容以文本旁白呈现。再补行走段需要新的雪地场景图。
+- **框架层共三段行走**（序章台阶 / 间章雪巷 / 终章归途），其余框架层内容以文本旁白呈现。再补需要新的雪地场景图。
 - **`assets/manifest-props.json` 的 251 个道具未接入**：已加工入库但游戏没用上（留给未来的室内布景）。
 - 归一化：`bust-woman-*` 用的是 `bust-heroine-*` 的图（小说里"妇人"没有独立立绘），
   文案侧用「妇人」区分。
