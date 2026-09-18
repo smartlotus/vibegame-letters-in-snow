@@ -1,0 +1,2 @@
+# 跳过 GitHub Pages 的 Jekyll 构建（纯静态站点无需 Jekyll，且它会忽略 `_` 前缀路径）
+placeholder

@@ -15,6 +15,7 @@
   },
   "startScene": "scenes/main.scene.json",
   "manifests": ["assets/manifest.json"],
+  "releaseExtraRoots": [".nojekyll"],
   "inputMap": "config/input-map.json",
   "runtimeDefaults": {
     "dev": { "appBasePath": "", "apiBaseUrl": "" },

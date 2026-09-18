@@ -18,7 +18,21 @@
   <!-- crossorigin="anonymous" lets the browser surface full stack traces from
        Phaser instead of collapsing them into "Script error." -->
   <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js" crossorigin="anonymous"></script>
-  <script>window.__APP_CONFIG__ = window.__APP_CONFIG__ || { appBasePath: '', apiBaseUrl: '' }</script>
+  <script>
+    // appBasePath 决定引擎如何解析 project.json / assets / scripts 的 URL（见 .vibegame/spec/engine/deployment.md）。
+    //
+    // vibegame run 会在本脚本之前注入 dev 配置（appBasePath: ''），所以本地开发不受这里影响。
+    // 静态部署时没有服务端注入，需要自己判断：
+    //   - GitHub Pages 项目站点挂在 https://<user>.github.io/<repo>/ ，前缀就是 /<repo>
+    //   - 站点根部署（自定义域名 / 用户主页仓）则为空串
+    // 因此只在 *.github.io 且带首段路径时才补子路径，其它静态托管一律按根处理。
+    (function () {
+      if (window.__APP_CONFIG__) return;
+      var first = location.pathname.split('/').filter(Boolean)[0] || '';
+      var isProjectSite = /(^|\.)github\.io$/.test(location.hostname) && !!first;
+      window.__APP_CONFIG__ = { appBasePath: isProjectSite ? '/' + first : '', apiBaseUrl: '' };
+    })();
+  </script>
 </head>
 <body>
   <div id="game-container"></div>
