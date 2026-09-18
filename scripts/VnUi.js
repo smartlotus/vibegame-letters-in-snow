@@ -1,4 +1,8 @@
-import { Node } from '/engine/Node.js'
+// 相对导入，而非引擎规范里的绝对路径 '/engine/Node.js'。
+// 浏览器把 '/xxx' 解析成「域名根」，站点部署在子路径下（GitHub Pages 项目站点
+// 是 /<repo>/）时会 404；相对路径跟着本文件所在 URL 走，根路径与子路径都对。
+// boot.js 加载游戏脚本用的是带 appBasePath 的 resourceUrl()，所以只有手写导入需要注意。
+import { Node } from '../engine/Node.js'
 import { VN_CSS } from './VnStyle.js'
 
 /**

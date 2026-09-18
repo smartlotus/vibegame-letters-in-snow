@@ -149,3 +149,43 @@ await 它会让 `propagateReady` 挂住、引擎 boot 卡死、Runtime bridge �
 ## Checkpoints
 
 无 URL 参数式 checkpoint。跳章用 `debugGoto(i)`（见 Test Hooks）。
+
+---
+
+## 静态部署（GitHub Pages）
+
+线上地址：https://smartlotus.github.io/vibegame-letters-in-snow/
+发布分支：`release`（由 `vibegame release .` 生成，只含运行时文件 + 145 个 manifest 资源）
+
+```bash
+vibegame release .                 # 从 main 重新生成 release 分支
+git push origin release            # Pages 自动重建（源 = release 分支根目录）
+```
+
+### ⚠️ 子路径部署的两个坑（都踩过）
+
+**1. `appBasePath` 必须指向子路径。**
+引擎所有资源 URL 都经 `engine/url.js` 的 `resourceUrl()` 解析，前缀就是 `appBasePath`。
+GitHub Pages 项目站点挂在 `/<repo>/` 下，若 `appBasePath` 为空会去请求 `/project.json` → 404 白屏。
+`vibegame run` 会注入 dev 配置（空串），静态部署没有服务端注入，所以
+`index.html` 的回退脚本改为**仅在 `*.github.io` 且带首段路径时**推断子路径。
+
+**2. 游戏脚本里的导入不能用绝对路径。**
+引擎规范写 `import { Node } from '/engine/Node.js'` —— 浏览器把 `/xxx` 解析成**域名根**，
+子路径部署下会去请求 `https://<user>.github.io/engine/Node.js` → 404，
+表现为 `Failed to fetch dynamically imported module` + `script "Stage" not found in scriptClasses`。
+本项目统一改用相对路径 `'../engine/Node.js'`（根路径与子路径都对）。
+> `engine/boot.js` 加载游戏脚本用的是带 `appBasePath` 的 `resourceUrl()`，所以引擎侧没问题，
+> **只有手写脚本的静态导入需要注意**。
+
+### 部署后可玩性验证
+
+静态部署没有 runtime server，Runtime API 用不了，只能用真实浏览器：
+
+```bash
+python tools/check_deployed.py [URL]
+# 输出：canvas/UI 是否起来、__APP_CONFIG__、失败请求清单、console 错误
+# 截图：logs/deployed-live.png    退出码 0 = PLAYABLE
+```
+
+**只靠 curl 判 200 是不够的** —— 文件都在、页面照样白屏（上面第 2 条就是这么漏过去的）。
