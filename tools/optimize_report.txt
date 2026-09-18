@@ -1,5 +1,0 @@
-bg PNG->JPG: converted 32, skipped 0
-  bytes before 51285045 (48.91 MB) -> after 8599022 (8.20 MB)
-manifest.json keys: 144
-manifest-props.json keys: 251
-missing files: 0
